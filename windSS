@@ -1,1 +1,221 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local EXFM = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local UICorner = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Workspace.SS.MainModule.rrr
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+EXFM.Name = "EXFM"
+EXFM.Parent = ScreenGui
+EXFM.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+EXFM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EXFM.BorderSizePixel = 0
+EXFM.Position = UDim2.new(0.293015659, 0, 0.245405957, 0)
+EXFM.Size = UDim2.new(0, 775, 0, 388)
+
+TextBox.Parent = EXFM
+TextBox.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.ClipsDescendants = true
+TextBox.Position = UDim2.new(0.078167066, 0, 0.204819277, 0)
+TextBox.Size = UDim2.new(0, 532, 0, 173)
+TextBox.Font = Enum.Font.Ubuntu
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner.Parent = TextBox
+
+TextButton.Parent = EXFM
+TextButton.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0779240206, 0, 0.684585094, 0)
+TextButton.Size = UDim2.new(0, 172, 0, 50)
+TextButton.Font = Enum.Font.Unknown
+TextButton.Text = "execute require"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 20.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(44, 44, 44)
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = EXFM
+TextButton_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.392980456, 0, 0.684585094, 0)
+TextButton_2.Size = UDim2.new(0, 122, 0, 50)
+TextButton_2.Font = Enum.Font.Unknown
+TextButton_2.Text = "Clear"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 20.000
+TextButton_2.TextStrokeColor3 = Color3.fromRGB(44, 44, 44)
+TextButton_2.TextStrokeTransparency = 0.000
+TextButton_2.TextWrapped = true
+
+TextButton_3.Parent = EXFM
+TextButton_3.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.828240097, 0, 0.151080027, 0)
+TextButton_3.Size = UDim2.new(0, 34, 0, 20)
+TextButton_3.Font = Enum.Font.Unknown
+TextButton_3.Text = "R6"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 20.000
+TextButton_3.TextStrokeColor3 = Color3.fromRGB(48, 48, 48)
+TextButton_3.TextStrokeTransparency = 0.000
+
+TextButton_4.Parent = EXFM
+TextButton_4.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.899882436, 0, 0.148706809, 0)
+TextButton_4.Size = UDim2.new(0, 34, 0, 20)
+TextButton_4.Font = Enum.Font.Unknown
+TextButton_4.Text = "RE"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 20.000
+TextButton_4.TextStrokeColor3 = Color3.fromRGB(48, 48, 48)
+TextButton_4.TextStrokeTransparency = 0.000
+
+UICorner_2.Parent = EXFM
+
+TextLabel.Parent = EXFM
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0781671181, 0, 0.0321285129, 0)
+TextLabel.Size = UDim2.new(0, 313, 0, 37)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "blossy"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 29.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = TextLabel
+UITextSizeConstraint.MaxTextSize = 29
+
+UIAspectRatioConstraint.Parent = EXFM
+UIAspectRatioConstraint.AspectRatio = 1.490
+
+-- Scripts:
+
+local function IAGGJ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.ExecuteEvent:FireServer(script.Parent.Parent.TextBox.Text)
+		end)
+end
+coroutine.wrap(IAGGJ_fake_script)()
+local function SSIGCJ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TextBox.Text = ""
+	end)
+end
+coroutine.wrap(SSIGCJ_fake_script)()
+local function BQQDAJJ_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	
+	script.Parent.MouseButton1Click:connect(function() -- ClientHandler script (local script)
+		script.ServerEvent:FireServer()
+	end)
+end
+coroutine.wrap(BQQDAJJ_fake_script)()
+local function EWCLMJ_fake_script() -- TextButton_4.Script 
+	local script = Instance.new('Script', TextButton_4)
+
+	script.Parent.RemoteEvent.OnServerEvent:Connect(function(plr)
+		local CFrame = plr.Character:FindFirstChild("HumanoidRootPart").CFrame
+		plr:LoadCharacter()	
+		local HRP = workspace:WaitForChild(plr.Name):WaitForChild("HumanoidRootPart")
+		HRP.CFrame = CFrame
+	end)
+end
+coroutine.wrap(EWCLMJ_fake_script)()
+local function MARSQN_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local plr = game:GetService("Players").LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local CFrame = plr.Character:FindFirstChild("HumanoidRootPart").CFrame
+		local CameraCFrame = workspace.Camera.CFrame
+		script.Parent.RemoteEvent:FireServer()
+		local HRP = workspace:WaitForChild(plr.Name):WaitForChild("HumanoidRootPart")
+		HRP.CFrame = CFrame
+		workspace.Camera.CFrame = CameraCFrame
+		workspace.Camera.Changed:Wait()
+		workspace.Camera.CFrame = CameraCFrame
+	end)
+end
+coroutine.wrap(MARSQN_fake_script)()
+local function DJNTOMH_fake_script() -- EXFM.UIDrag 
+	local script = Instance.new('LocalScript', EXFM)
+
+	-- Made by Real_IceyDev (@lceyDex) --
+	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(DJNTOMH_fake_script)()
